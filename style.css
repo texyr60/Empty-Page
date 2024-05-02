@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #fffff0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 5px 20px;
+    gap: 420px;
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.second-color {
+    color: #ff8800;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu p {
+    border: 2px solid #313131;
+    padding: 7px 15px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.icon-menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #313131;
+    padding: 7px 15px;
+    border-radius: 30px;
+}
+
+.both {
+    font-size: 16px;
+    transition: all .3s;
+    letter-spacing: 1.7px;
+}
+
+.both i {
+    font-size: 24px;
+}
+
+.both:hover {
+    background-color: #313131;
+    cursor: pointer;
+    color: #fffff0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.header .big-text {
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 70px;
+    margin: 70px auto;
+}
+
+.header .description {
+    padding: 5px 75px;
+    color: #313131;
+    margin-bottom: 15px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.photo img {
+    width: 750px;
+    height: 449px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px 4px rgba(66, 68, 90, 1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-sp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-sp .title-p {
+    width: 89%;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper-sp .two-paragraphs {
+    display: flex;
+    padding: 100px 5px;
+    justify-content: center;
+}
+
+.two-paragraphs p {
+    text-align: center;
+    width: 90%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px 2px rgba(66, 68, 90, .4);
+    color: #313131;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.con i {
+    font-size: 48px;
+    color: #313131;
+}
+
+.con h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #313131;
+}
+
+.wrapper-footer {
+    width: 100%;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 10px;
+    color: #fffff0;
+    text-transform: uppercase;
+}
+
+.side h3 {
+    text-align: center;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logos-footer i {
+    background-color: #ff8800;
+    padding: 7px;
+    border-radius: 15px;
+    transition: all .3s;
+}
+
+.logos-footer i:hover {
+    background: none;
+    color: #ff8800;
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .navigation{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .header .big-text {
+        font-size: 50px;
+    }
+    
+    .photo img {
+        width: 650px;
+        height: 349px;
+    }
+
+    .wrapper-sp .title-p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .header .big-text {
+        font-size: 40px;
+    }
+
+    .header .description {
+        font-size: 12px;
+    }
+
+    .photo img {
+        display: none;
+    }
+
+    .wrapper-sp .title-p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .wrapper-sp .two-paragraphs {
+        flex-direction: column;
+        gap: 75px;
+    }
+}
